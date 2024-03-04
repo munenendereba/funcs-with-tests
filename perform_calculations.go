@@ -36,6 +36,6 @@ func checkNumber(i any) (float64, error) {
 
 		return res, nil
 	default:
-		return 0.0, errors.New("invalid value for calculation")
+		return 0.0, errors.New("error parsing invalid value")
 	}
 }
