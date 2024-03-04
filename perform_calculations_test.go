@@ -49,3 +49,8 @@ func BenchmarkAddTwoNumbers(b *testing.B) {
 		AddTwoNumbers(20399332.99, "45e9")
 	}
 }
+
+func ExampleAddTwoNumbers() {
+	fmt.Println(AddTwoNumbers("4", 90.7))
+	// Output: 94.7 <nil>
+}
