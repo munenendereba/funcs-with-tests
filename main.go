@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Here")
+	fmt.Println(AddTwoNumbers("98", 2.0))
 }
