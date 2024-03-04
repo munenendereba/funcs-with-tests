@@ -7,7 +7,7 @@ import (
 	"testing"
 )
 
-func TestAddTwoNumbersTable(t *testing.T) {
+func TestAddTwoNumbers(t *testing.T) {
 	var tests = []struct {
 		a, b any
 		want float64
@@ -41,5 +41,11 @@ func TestAddTwoNumbersTable(t *testing.T) {
 			}
 
 		})
+	}
+}
+
+func BenchmarkAddTwoNumbers(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		AddTwoNumbers(20399332.99, "45e9")
 	}
 }
